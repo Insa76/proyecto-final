@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  background-image: url(img/banner2.jpg);
+  background-image: url(/img/banner1.jpg);
   background-position: 90%;
   background-size: cover;
   border: 3px solid rgb(7, 165, 177);
@@ -27,7 +27,6 @@ header img {
 
 .menu {
   display: flex;
-  margin: 50px;
   justify-content: space-around;
   list-style: none;
 }
@@ -62,7 +61,7 @@ h2 {
 }
 
 .sinopsis {
-  background-image: url(img/sinopsis.jpg);
+  background-image: url(/img/sinopsis.jpg);
   background-position: center center;
   background-size: cover;
   border: 3px solid rgb(7, 165, 177);
@@ -143,7 +142,7 @@ h3 {
   margin: -10px;
 }
 
-.trailer h3 {
+.trailer p {
   background-color: black;
   color: rgb(138, 248, 138);
   text-align: center;
@@ -172,7 +171,7 @@ footer {
 }
 
 nav li {
-  padding: 10px;
+  padding: 6px;
   line-height: 10px;
   width: auto;
   border-radius: 3px;
@@ -200,19 +199,40 @@ nav > ul > li {
   width: 30px;
   height: 30px;
 }
-.rigth img:hover {
-  transform: scale(1.1);
+
+li figure {
+  position: relative;
+}
+
+li figure:hover figcaption {
+  display: block;
+}
+
+li figcaption {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -40;
+  bottom: 0;
+  right: 0;
+  font-size: 15px;
+  color: rgb(138, 248, 138);
 }
 
 @media (max-width: 480px) {
   header ul {
     flex-direction: column;
     text-align: center;
+    width: 400px;
   }
 
   header img {
-    margin-top: -25px;
+    margin-top: -30px;
     margin-bottom: 200px;
+  }
+
+  header li {
+    margin-left: 100px;
   }
 
   .sinopsis img {
@@ -222,6 +242,7 @@ nav > ul > li {
 
   .sinopsis p {
     text-align: center;
+    margin-top: 10px;
   }
 
   .personajes {
@@ -246,10 +267,11 @@ nav > ul > li {
     height: 50%;
   }
 
-  .trailer h3 {
+  .trailer p {
     margin-bottom: 10px;
     font-size: 13px;
     width: 200px;
+    margin-top: -10px;
   }
 
   iframe {
@@ -264,20 +286,23 @@ nav > ul > li {
     width: 200px;
   }
   .ver-serie p {
-    line-height: 20px;
-    font-size: 15px;
+    line-height: 15px;
+    font-size: 14px;
   }
 
   .left ul {
     margin-top: 11px;
   }
   .left li {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .rigth img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     flex-wrap: nowrap;
+  }
+  .rigth p {
+    font-size: 13px;
   }
 }
