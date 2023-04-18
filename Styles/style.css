@@ -272,7 +272,7 @@ li figcaption {
 
   .trailer {
     margin: 10px;
-    width: 50%;
+    width: 60%;
     height: 50%;
   }
 
@@ -298,13 +298,9 @@ li figcaption {
     line-height: 15px;
     font-size: 14px;
   }
-
-  .left ul {
-    margin-top: -11px;
-  }
-
   .left p {
     font-size: 11px;
+    padding: 0%;
   }
 
   .rigth img {
@@ -312,6 +308,9 @@ li figcaption {
     height: 25px;
   }
   .rigth p {
-    font-size: 13px;
+    font-size: 14px;
+  }
+  .rigth li p {
+    font-size: 11px;
   }
 }
