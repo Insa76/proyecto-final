@@ -61,8 +61,8 @@ h2 {
 }
 
 .sinopsis {
-  background-image: url(/img/sinopsis.jpg);
-  background-position: center center;
+  background-image: url(https://caracoltv.brightspotcdn.com/dims4/default/cdc93c3/2147483647/strip/true/crop/1371x720+64+0/resize/1200x630!/quality/90/?url=https:%2F%2Fcaracol-brightspot.s3-us-west-2.amazonaws.com%2Fassets%2Fshock%2Fcontent_files%2F2017_10%2Fimage_article%2Frick_y_morty.jpg);
+  background-position: center top;
   background-size: cover;
   border: 3px solid rgb(7, 165, 177);
   border-radius: 10px;
@@ -168,16 +168,14 @@ footer {
   justify-content: space-between;
   font-family: "Bai Jamjuree", sans-serif;
   padding: 10px;
+  background-color: black;
+  margin-top: 10px;
 }
 
 nav li {
   padding: 6px;
-  line-height: 10px;
-  width: auto;
-  border-radius: 3px;
   color: rgb(138, 248, 138);
-  background-color: black;
-  margin: 10px;
+  margin-top: 10px;
   list-style: none;
 }
 
@@ -185,19 +183,30 @@ nav > ul > li {
   font-size: 14px;
 }
 
+nav p {
+  color: rgb(138, 248, 138);
+  font-size: 13px;
+  margin-left: 10px;
+  padding: 5px;
+}
+
 .rigth {
   padding: 10px;
-  margin-right: 20px;
-  line-height: 20px;
+  line-height: 10px;
   list-style: none;
-  background-color: black;
-  border-radius: 3px;
-  margin: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .rigth img {
   width: 30px;
   height: 30px;
+  margin-top: 20px;
+}
+
+.rigth > p {
+  color: rgb(138, 248, 138);
+  margin-right: -90px;
 }
 
 li figure {
@@ -211,11 +220,11 @@ li figure:hover figcaption {
 li figcaption {
   display: none;
   position: absolute;
-  top: 0;
-  left: -40;
-  bottom: 0;
+  top: 5;
+  left: 5;
+  bottom: 5;
   right: 0;
-  font-size: 15px;
+  font-size: 14px;
   color: rgb(138, 248, 138);
 }
 
@@ -291,16 +300,16 @@ li figcaption {
   }
 
   .left ul {
-    margin-top: 11px;
+    margin-top: -11px;
   }
-  .left li {
+
+  .left p {
     font-size: 11px;
   }
 
   .rigth img {
     width: 25px;
     height: 25px;
-    flex-wrap: nowrap;
   }
   .rigth p {
     font-size: 13px;
