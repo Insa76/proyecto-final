@@ -235,7 +235,7 @@ li figcaption {
   header ul {
     flex-direction: column;
     text-align: center;
-    width: 400px;
+    width: 100%;
   }
 
   header img {
